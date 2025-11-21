@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Aplicaciones Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .contenedor {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 3rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 2rem;
+        }
+        header h1 {
+            font-family: 'Lora', serif;
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .autor {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+        .descripcion {
+            background: #f5f7fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            color: #555;
+            line-height: 1.6;
+            border-left: 4px solid #667eea;
+        }
+        .temas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .tema {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tema:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        .tema-header {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            color: white;
+        }
+        .tema-header h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .tema-body {
+            padding: 1.5rem;
+            color: white;
+        }
+        .tema-body ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        .tema-body li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .tema-body li:before {
+            content: "✓";
+            margin-right: 0.8rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .enlaces {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .enlace {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+        .enlace:hover {
+            background: white;
+            color: #667eea;
+            border-color: white;
+            transform: translateX(5px);
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #e0e0e0;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Diseño de Aplicaciones Web</h1>
+            <p>Curso Práctico de Desarrollo Web</p>
+            <p class="autor">👨‍💻 Francisco Javier Mesa Giner</p>
+        </header>
+
+        <div class="descripcion">
+            <p>Bienvenido a mi portafolio de la asignatura de <strong>Diseño de Aplicaciones Web</strong></p>
+        </div>
+
+        <div class="temas">
+            <div class="tema">
+                <div class="tema-header">
+                    <h2>📚 TEMA 1</h2>
+                    <p>Introducción a HTML</p>
+                </div>
+                <div class="tema-body">
+                    <div class="enlaces">
+                        <a href="TEMA1/partesPagina.html" class="enlace">Partes de una Página</a>
+                        <a href="TEMA1/plazaMuiguelito.html" class="enlace">Plaza Miguelito</a>
+                        <a href="TEMA1/TablaEjercicios.html" class="enlace">Tabla de Ejercicios</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tema">
+                <div class="tema-header">
+                    <h2>🎨 TEMA 2</h2>
+                    <p>CSS y Diseño Visual</p>
+                </div>
+                <div class="tema-body">
+                    <div class="enlaces">
+                        <a href="TEMA2/presentacion.html" class="enlace">Mi Presentación</a>
+                        <a href="TEMA2/tarjetaBasica.html" class="enlace">Tarjeta Básica</a>
+                        <a href="TEMA2/tarjetaPerfil.html" class="enlace">Tarjeta de Perfil</a>
+                        <a href="TEMA2/bloqueAdaptable.html" class="enlace">Bloque Adaptable</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Francisco Javier Mesa Giner | Diseño de Aplicaciones Web</p>
+        </footer>
+    </div>
+</body>
+</html>

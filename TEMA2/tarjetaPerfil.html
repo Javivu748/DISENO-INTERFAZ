@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+</head>
+<style>
+    :root{
+        --principal: #4a8de3;
+        --secundario: hsl(255,15%,67%);
+        --acento:rgb(255, 180, 90);
+    }
+    #perfil{
+        padding: 20px;
+        background-color: var(--secundario);
+        border-radius: 20px;
+        max-width: 340px;
+    }
+    .nombre{
+        color: var(--principal);
+        font-size: 1.5em;
+    }
+    .nombre p{
+        color: rgba(0,0,0,0.8);
+    }
+    .boton{
+        background-color: var(--secundario);
+        border: 0px;
+        transition: 0.3s ease-in-out;
+    }
+    .boton:hover{
+        background-color: var(--acento);
+    }
+
+</style>
+<body>
+    <div id="perfil">
+        <h2 class="nombre">Francisco Javier Mesa Giner</h2>
+        <p>Soy estudiante de Desarrollo de aplicaciones web. Me gusta aprender CSS.</p>
+        <button class="boton">
+            Contáctame
+        </button>
+    </div>
+</body>
+</html>

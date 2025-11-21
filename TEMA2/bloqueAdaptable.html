@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividad 4 — Bloque adaptable</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        line-height: 1.6;
+    }
+
+    #adaptable {
+        background: #74b9ff;
+        padding: 20px;
+        margin: 1em auto;
+        display: block;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        box-sizing: border-box;
+        max-width: 400px;
+    }
+
+    #adaptable h2 {
+        margin-top: 0;
+    }
+
+    
+    @media (max-width: 500px) {
+        #adaptable {
+            background: #ff7675;
+        }
+    }
+
+    /* Media Query para impresión */
+    @media print {
+        #adaptable {
+            background: white;
+            border: 2px solid black;
+            box-shadow: none;
+        }
+    }
+
+    .img-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .img-container img {
+        width: 70%;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+
+<body>
+<div id="adaptable">
+    <h2>Bloque adaptable</h2>
+    <p>Este bloque cambia de aspecto cuando la pantalla es pequeña o cuando lo imprimes.</p>
+</div>
+</body>
+</html>
