@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        gap: 2px;
+        height: 100vh;
+    }
+
+    aside {
+        flex: 1;
+        background-color: #e0f7fa;
+        padding: 12px 24px;
+        overflow-y: auto;
+    }
+
+    aside h2 {
+        color: #00796b;
+        margin-bottom: 1rem;
+    }
+
+    aside ul {
+        list-style-type: none;
+    }
+
+    aside li {
+        margin: 10px 0;
+    }
+
+    aside a {
+        text-decoration: none;
+        color: #004d40;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    aside a:hover {
+        text-decoration: underline;
+        color: #00796b;
+    }
+
+    section {
+        flex: 4;
+        background-color: #c2adad;
+        padding: 12px 24px;
+        overflow-y: auto;
+    }
+</style>
+<body>
+    <aside>
+        <h2>Menú de Navegación</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </aside>
+    <section>
+        <h1>Contenido Principal</h1>
+        <p>Este es el área de contenido principal donde se mostrará la información relevante.</p>
+    </section>
+</body>
+</html>

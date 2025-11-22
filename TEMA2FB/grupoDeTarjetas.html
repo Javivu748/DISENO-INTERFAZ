@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Tarjetas - Layout 2 columnas</title>
+    <style>
+        * { 
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body { height: 100%; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            display: flex;
+            min-height: calc(100vh - 40px);
+            align-items: stretch;
+        }
+
+        
+        .col-izq {
+            flex: 2;
+            background: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .col-der {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #f6f6f6;
+        }
+
+        
+        .col-der .fila {
+            flex: 1; 
+            border: 1px solid lightgray;
+            padding: 16px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        h1.title {
+            font-size: 1.6rem;
+            color: white;
+            text-align: center;
+        }
+
+        .nota {
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        
+        @media (max-width: 640px) {
+            .container { flex-direction: column; }
+            .col-izq, .col-der { flex: none; width: 100%; }
+            .col-der { flex-direction: column; }
+            .col-der .fila { height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-izq">
+            <div>
+                <h1 class="title">Columna Izquierda</h1>
+                <p class="nota">Aquí va el contenido principal de la página.</p>
+            </div>
+        </div>
+
+        <div class="col-der">
+            <div class="fila">Fila superior (derecha)</div>
+            <div class="fila">Fila inferior (derecha)</div>
+        </div>
+    </div>
+</body>
+</html>

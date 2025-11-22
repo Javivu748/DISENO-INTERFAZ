@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+</head>
+<style>
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        display: flex;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        padding: 0;
+    }
+    nav {
+        margin: auto;
+    }
+    nav li {
+        margin: 30px 15px;
+    }
+    nav li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transition: background-color 0.3s;
+    }
+    nav li a:hover {
+        background-color:lightgreen;
+        border-radius: 20px;
+    }
+    .botones {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 100px;
+    }
+    .botones button {
+        background-color: white;
+        color: #4CAF50;
+        border: none;
+        padding: 10px 20px;
+        margin-left: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .botones button:hover {
+        background-color: lightgreen;
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="botones">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </header>
+</body>
+</html>

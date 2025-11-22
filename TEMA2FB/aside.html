@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar y Contenido</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        gap: 2px;
+        height: 100vh;
+    }
+
+    aside {
+        flex: 1;
+        background-color: #e0f7fa;
+        padding: 12px 24px;
+        overflow-y: auto;
+    }
+
+    aside h2 {
+        color: #00796b;
+        margin-bottom: 1rem;
+    }
+
+    aside ul {
+        list-style-type: none;
+    }
+
+    aside li {
+        margin: 10px 0;
+    }
+
+    aside a {
+        text-decoration: none;
+        color: #004d40;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    aside a:hover {
+        text-decoration: underline;
+        color: #00796b;
+    }
+
+    section {
+        flex: 4;
+        background-color: #c2adad;
+        padding: 12px 24px;
+        overflow-y: auto;
+    }
+
+    section h2 {
+        color: #00796b;
+        margin-bottom: 1rem;
+    }
+
+    section p {
+        line-height: 1.6;
+        color: #333333;
+    }
+</style>
+<body>
+    <aside>
+        <h2>Menú de Navegación</h2>
+        <nav>
+            <ul>
+                <li><a href="menuVertical.html" target="_blank">Menú Vertical</a></li>
+                <li><a href="menuHorizontal.html" target="_blank">Menú Horizontal</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section>
+        <h2>Descripción</h2>
+        <p>Este apartado contiene enlaces a dos tipos de menús de navegación: un menú vertical y un menú horizontal. Haciendo clic en cada enlace se abrirá una nueva ventana o pestaña que mostrará el diseño correspondiente del menú.</p>
+    </section>
+</body>
+</html>
